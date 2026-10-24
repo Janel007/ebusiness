@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "chmod +x node_modules/.bin/vite",
-    "build": "vite build",
+    "vercel-build": "npm ci && chmod +x node_modules/.bin/vite && vite build",
     "preview": "vite preview",
     "lint": "oxlint"
   },
